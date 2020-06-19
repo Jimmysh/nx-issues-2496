@@ -1,16 +1,7 @@
-import React from 'react';
-
-import './react-lib.scss';
-
-/* eslint-disable-next-line */
-export interface ReactLibProps {}
-
-export const ReactLib = (props: ReactLibProps) => {
-  return (
-    <div>
-      <h1>Welcome to react-lib component!</h1>
-    </div>
-  );
-};
-
-export default ReactLib;
+export async function create() {
+  return { a: 1 };
+}
+export async function test() {
+  const { a } = await create();
+  console.log(a);
+}

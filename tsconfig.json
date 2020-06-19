@@ -16,7 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myworkspace/react-lib": ["libs/react-lib/src/index.ts"]
+      "@nx-issues-2496/react-lib": ["libs/react-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

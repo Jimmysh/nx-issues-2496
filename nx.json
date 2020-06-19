@@ -1,5 +1,5 @@
 {
-  "npmScope": "myworkspace",
+  "npmScope": "nx-issues-2496",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {
@@ -10,13 +10,21 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
   "projects": {
-    "test": {
+    "react-test": {
       "tags": []
     },
-    "test-e2e": {
+    "react-test-e2e": {
       "tags": [],
-      "implicitDependencies": ["test"]
+      "implicitDependencies": ["react-test"]
     },
     "react-lib": {
       "tags": []
